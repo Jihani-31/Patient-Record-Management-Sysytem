@@ -1,0 +1,25 @@
+body{
+	font-family: Arial, Helvetica, sans-serif;
+	
+
+	font-size: 14px;
+}
+
+.login{
+	width: 350px;
+	margin: 100px auto;
+}
+
+input{
+	display: block;
+	width: 100%;
+	padding-right: 5px;
+	box-sizing: border-box;
+}
+
+p.error{
+	background-color: red;
+	color: white;
+	padding:10px;
+	
+}
