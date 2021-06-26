@@ -13,14 +13,14 @@
 
 </head>
 	<body>
-		<nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#">Logo</a> 
+		<nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#">Ward No 10</a> 
 			<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button> 
 			<div class="collapse navbar-collapse" id="main-navigation"> 
 				<ul class="navbar-nav"> 
 					<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
-					<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/savedata">Add Traveller</a></li> 
+					<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/savedata">Add Patient</a></li> 
 				</ul> 
 			</div> 
 		</nav>
@@ -29,7 +29,7 @@
 		        <div class="col-12">
 		            <div class="card mt-4">
 		                <div class="card-header bg-info">
-		                    <h3 class="card-title m-0 p-0" style="text-align: center">Travellers List</h3>
+		                    <h3 class="card-title m-0 p-0" style="text-align: center">Patient Record List</h3>
 		                </div>
 		                <!-- /.card-header -->
 		                <!-- /.card-body -->
@@ -37,11 +37,11 @@
 		                    <table id="datatable" class="table table-bordered table-striped table-hover">
 		                        <thead>
 		                            <tr>
-		                                <th style="width: 5%">ID</th>
+		                                <th style="width: 5%">Patient ID</th>
 		                                <th style="width: 20%">Full Name</th>
-		                                <th class="no-sort" style="width: 20%">Email</th>
+		                                <th style="width: 20%">Age</th>
 		                                <th class="no-sort" style="width: 20%">Mobile Number</th>
-		                                <th style="width: 20%">Destination</th>
+		                                <th style="width: 20%">Blood Group</th>
 		                                <th class="no-sort" style="width: 15%; text-align: center;">Action</th>
 		                            </tr>
 		                        </thead>
@@ -55,7 +55,7 @@
 											echo "<td>".$row->email."</td>";
 											echo "<td>".$row->mobile."</td>";
 											echo "<td>".$row->destination."</td>";
-											echo "<td class='p-2'><a href='deletedata?id=".$row->id."' style='width: 48%' class='btn btn-danger btn-sm float-left' >Delete<br></a>";
+											echo "<td class='p-2'><a href='deletedata?id=".$row->id."' style='width: 48%' class='btn btn-danger btn-sm float-left' >Discharge<br></a>";
 											echo "<a href='updatedata?id=".$row->id."' style='width: 48%' class='btn btn-warning btn-sm float-right'>Update</a></td>";
 											
 											echo "</tr>";
@@ -66,11 +66,11 @@
 		                        </tbody>
 		                        <tfoot>
 		                            <tr>
-		                                <th>ID</th>
+		                                <th>PatientID</th>
 		                                <th>Full Name</th>
-		                                <th>Email</th>
+		                                <th>Age</th>
 		                                <th>Mobile Number</th>
-		                                <th>Destination</th>
+		                                <th>Blood Group</th>
 		                                <th style="text-align: center;">Action</th>
 		                            </tr>
 		                        </tfoot>

@@ -14,14 +14,14 @@
     </style>
 </head>
 <body>
-	<nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#">Logo</a> 
+	<nav class="navbar navbar-expand-md"> <a class="navbar-brand" href="#">Ward No 10</a> 
 		<button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#main-navigation">
 			<span class="navbar-toggler-icon"></span>
 		</button> 
 		<div class="collapse navbar-collapse" id="main-navigation"> 
 			<ul class="navbar-nav"> 
 				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
-				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata"> Add Traveller</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata"> Patient Records</a></li> 
 			</ul> 
 		</div> 
 	</nav>
@@ -30,12 +30,12 @@
 
 			<form class="col-5 border border-secondary rounded" style="margin:auto;" action="" method="post">
 				<br><br>
-				<h2 class="text-center text-secondary">Add Traveller</h2>
+				<h2 class="text-center text-secondary">Add New Patient</h2>
 				<br>
 
 				<div class="form-group">
 					<label>Full Name</label>
-					<input type="text" class="form-control" name="name" id="name" placeholder="Name" value="<?php echo set_value('name') ?>" required>
+					<input type="text" class="form-control" name="name" id="name" placeholder="Full Name" value="<?php echo set_value('name') ?>" required>
 
 					<?php if(form_error('name')){
 			            echo "<span style='color:red'>".form_error('name')."</span>";
@@ -44,8 +44,8 @@
 				</div>
 
 				<div class="form-group">
-					<label>Email</label>
-					<input class="form-control" name="email" id="email" placeholder="Email" type="email" value="<?php echo set_value('email') ?>" required>
+					<label>Age</label>
+					<input class="form-control" name="email" id="email" placeholder="Age" type="number" value="<?php echo set_value('email') ?>" required>
 					<?php if(form_error('email')){
 			            echo "<span style='color:red'>".form_error('email')."</span>";
 			        }
@@ -59,13 +59,17 @@
 				
 
 				<div class="form-group ">
-					<label>Destination</label>
+					<label>Blood Group</label>
 					<select class="form-control mb-3" name="destination" id="destination" required>
-						<option value="">--SELECT--</option>
-						<option value="Sigiriya">Sigiriya</option>
-						<option value="Ella">Ella</option>
-						<option value="Ruassala">Rumassala</option>
-						<option value="Arugabey">Mirissa</option>
+						<option value="">--SELECT THE BLOOD GROUP--</option>
+						<option value="A-">A-</option>
+						<option value="A+">A+</option>
+						<option value="B-">B-</option>
+						<option value="B+">B+</option>
+						<option value="AB-">AB-</option>
+						<option value="AB+">AB+</option>
+						<option value="O-">O-</option>
+						<option value="O+">O+</option>
 						
 					</select>
 				</div>
