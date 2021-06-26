@@ -1,5 +1,5 @@
 # Patient Record Management Sysytem
-HomePage
+#HomePage
 Add Patient Records
 View Patient Records
 Update Records
