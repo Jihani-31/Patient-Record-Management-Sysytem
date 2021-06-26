@@ -23,6 +23,8 @@
 		</button> 
 		<div class="collapse navbar-collapse" id="main-navigation"> 
 			<ul class="navbar-nav"> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata">View Joined Member</a></li> 
 			</ul> 
 		</div> 
 	</nav>
@@ -61,7 +63,7 @@
 				</div>
 				<div class="form-group row">
 					<button type="submit" class="btn btn-success col-3 m-1 ml-3" name="update" value="update">Update</button>
-					<a href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/displaydata" class="btn btn-info col-3 m-1">View Patients</a> 
+					<a href="http://localhost/codeblog/index.php/register/displaydata" class="btn btn-info col-3 m-1">View Joined Member</a> 
 				</div>
 				<br><br>
 				

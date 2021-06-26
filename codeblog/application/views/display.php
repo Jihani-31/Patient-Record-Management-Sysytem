@@ -19,8 +19,8 @@
 			</button> 
 			<div class="collapse navbar-collapse" id="main-navigation"> 
 				<ul class="navbar-nav"> 
-					<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/">Home</a></li> 
-					<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/savedata">Addmit Patients</a></li> 
+					<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
+					<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/savedata">Add Traveller</a></li> 
 				</ul> 
 			</div> 
 		</nav>
@@ -29,7 +29,7 @@
 		        <div class="col-12">
 		            <div class="card mt-4">
 		                <div class="card-header bg-info">
-		                    <h3 class="card-title m-0 p-0" style="text-align: center">Patient Records</h3>
+		                    <h3 class="card-title m-0 p-0" style="text-align: center">Travellers List</h3>
 		                </div>
 		                <!-- /.card-header -->
 		                <!-- /.card-body -->
@@ -37,11 +37,11 @@
 		                    <table id="datatable" class="table table-bordered table-striped table-hover">
 		                        <thead>
 		                            <tr>
-		                                <th style="width: 5%">Patient ID</th>
+		                                <th style="width: 5%">ID</th>
 		                                <th style="width: 20%">Full Name</th>
-		                                <th class="no-sort" style="width: 20%">Age</th>
+		                                <th class="no-sort" style="width: 20%">Email</th>
 		                                <th class="no-sort" style="width: 20%">Mobile Number</th>
-		                                <th style="width: 20%">Diagnosis</th>
+		                                <th style="width: 20%">Destination</th>
 		                                <th class="no-sort" style="width: 15%; text-align: center;">Action</th>
 		                            </tr>
 		                        </thead>
@@ -66,11 +66,11 @@
 		                        </tbody>
 		                        <tfoot>
 		                            <tr>
-		                                <th>Patient ID</th>
+		                                <th>ID</th>
 		                                <th>Full Name</th>
-		                                <th>Age</th>
+		                                <th>Email</th>
 		                                <th>Mobile Number</th>
-		                                <th>Diagnosis</th>
+		                                <th>Destination</th>
 		                                <th style="text-align: center;">Action</th>
 		                            </tr>
 		                        </tfoot>

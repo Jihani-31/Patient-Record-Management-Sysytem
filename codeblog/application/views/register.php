@@ -20,8 +20,8 @@
 		</button> 
 		<div class="collapse navbar-collapse" id="main-navigation"> 
 			<ul class="navbar-nav"> 
-				<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/">Home</a></li> 
-				<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/displaydata"> Patients Record</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata"> Add Traveller</a></li> 
 			</ul> 
 		</div> 
 	</nav>
@@ -30,7 +30,7 @@
 
 			<form class="col-5 border border-secondary rounded" style="margin:auto;" action="" method="post">
 				<br><br>
-				<h2 class="text-center text-secondary">Add Patient Record</h2>
+				<h2 class="text-center text-secondary">Add Traveller</h2>
 				<br>
 
 				<div class="form-group">
@@ -44,8 +44,8 @@
 				</div>
 
 				<div class="form-group">
-					<label>Age</label>
-					<input class="form-control" name="email" id="email" placeholder="Email" type="number" value="<?php echo set_value('email') ?>" required>
+					<label>Email</label>
+					<input class="form-control" name="email" id="email" placeholder="Email" type="email" value="<?php echo set_value('email') ?>" required>
 					<?php if(form_error('email')){
 			            echo "<span style='color:red'>".form_error('email')."</span>";
 			        }
@@ -56,23 +56,17 @@
 					<label>Mobile Number</label>
 					<input type="number" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
 				</div>
-				<div class="form-group">
-					<label>Admitted date</label>
-					<input type="date" class="form-control" name="date" id="date" placeholder="Admit Date" required>
-				</div>
+				
 
 				<div class="form-group ">
-					<label>Blood Group</label>
+					<label>Destination</label>
 					<select class="form-control mb-3" name="destination" id="destination" required>
 						<option value="">--SELECT--</option>
-						<option value="Sigiriya">A-</option>
-						<option value="Ella">A+</option>
-						<option value="Ruassala">B-</option>
-						<option value="Arugabey">B+</option>
-						<option value="Sigiriya">AB-</option>
-						<option value="Ella">AB+</option>
-						<option value="Sigiriya">O-</option>
-						<option value="Ella">O+</option>
+						<option value="Sigiriya">Sigiriya</option>
+						<option value="Ella">Ella</option>
+						<option value="Ruassala">Rumassala</option>
+						<option value="Arugabey">Mirissa</option>
+						
 					</select>
 				</div>
 

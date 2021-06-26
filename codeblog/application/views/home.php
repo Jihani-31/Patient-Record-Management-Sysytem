@@ -20,20 +20,24 @@
       <div class="collapse navbar-collapse" id="main-navigation"> 
         <ul class="navbar-nav"> 
           <li class="nav-item"> <a class="nav-link" href="#">Home</a></li> 
-          <li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/displaydata">Patients Record</a></li> 
-          <li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/savedata">Add Patient</a></li> 
+          <li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata">Patients Record</a></li> 
+          <li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/savedata">Add Patient</a></li> 
         </ul> 
       </div> 
     </nav>
     <header class="page-header header container-fluid" style="font-family:Apple Chancery, cursive;"> 
       <div class="overlay">
+      
       </div>
       <div class="description">
 
         <h1 style="font-family:Apple Chancery, cursive; font-size: 80px;">Patient Record Management<br></h1> 
           <p style="font-family:Apple Chancery, cursive; font-size: 30px;">
            -place For All Your Patients Information
-          </p>
+          </p> 
+          <!--<p>
+            Sri Lanka, an island south of India crams an extraordinary variety of places to visit within its modest size. Lapped up by the Indian Ocean, the coastline is lined with idyllic – and often refreshingly undeveloped – beaches, while the mainland boasts a compelling variety of landscapes ranging from wildlife-rich lowland jungles to the misty highlands of the hills, swathed in tea plantations.
+          </p>-->
          <!-- <button class="btn btn-outline-secondary btn-lg">Read More</button>-->
       </div>
     </header>
@@ -63,8 +67,8 @@ Most people who fall sick with COVID-19 will experience mild to moderate symptom
         <div class="row">
           <div class="col-lg-8 col-md-8 col-sm-12">
             <h6 class="text-uppercase font-weight-bold">Additional Information About Patient Record</h6>
-            <p>Find travel ideas for planning your holiday to Sri Lanka. Discover things to see and do, places to stay and more.. This is the official site of Sri Lanka Tourism.. </p> 
-            <p> The country's wonderful individuality – evident in its contrasting landscapes and its distinct culture,</p> 
+            <p>Sysytem provides transformative services, expertise, and technologies to make organizations more efficient and more compliant.</p> 
+            <p>  We help Ward manage and activate their critical patient information through integrated information management services across the information lifecycle.</p> 
           </div>
           <div class="col-lg-4 col-md-4 col-sm-12">
             <h6 class="text-uppercase font-weight-bold">Contact</h6> 
@@ -78,3 +82,4 @@ Most people who fall sick with COVID-19 will experience mild to moderate symptom
     </footer>
   </body>
 </html>
+    
