@@ -20,8 +20,8 @@
 		</button> 
 		<div class="collapse navbar-collapse" id="main-navigation"> 
 			<ul class="navbar-nav"> 
-				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/">Home</a></li> 
-				<li class="nav-item"> <a class="nav-link" href="http://localhost/codeblog/index.php/register/displaydata">View Joined Member</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/">Home</a></li> 
+				<li class="nav-item"> <a class="nav-link" href="http://localhost/Patient-Record-Management-Sysytem/index.php/register/displaydata"> Patients Record</a></li> 
 			</ul> 
 		</div> 
 	</nav>
@@ -30,11 +30,11 @@
 
 			<form class="col-5 border border-secondary rounded" style="margin:auto;" action="" method="post">
 				<br><br>
-				<h2 class="text-center text-secondary">Add To Journey</h2>
+				<h2 class="text-center text-secondary">Add Patient Record</h2>
 				<br>
 
 				<div class="form-group">
-					<label>Name</label>
+					<label>Full Name</label>
 					<input type="text" class="form-control" name="name" id="name" placeholder="Name" value="<?php echo set_value('name') ?>" required>
 
 					<?php if(form_error('name')){
@@ -44,8 +44,8 @@
 				</div>
 
 				<div class="form-group">
-					<label>Email</label>
-					<input type="email" class="form-control" name="email" id="email" placeholder="Email" value="<?php echo set_value('email') ?>" required>
+					<label>Age</label>
+					<input class="form-control" name="email" id="email" placeholder="Email" type="number" value="<?php echo set_value('email') ?>" required>
 					<?php if(form_error('email')){
 			            echo "<span style='color:red'>".form_error('email')."</span>";
 			        }
@@ -54,18 +54,26 @@
 
 				<div class="form-group">
 					<label>Mobile Number</label>
-					<input type="text" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
+					<input type="number" class="form-control" name="mobile" id="mobile" placeholder="Mobile Number" required>
+				</div>
+				<div class="form-group">
+					<label>Admitted date</label>
+					<input type="date" class="form-control" name="date" id="date" placeholder="Admit Date" required>
 				</div>
 
 				<div class="form-group ">
-					<label>Destinations</label>
+					<label>Blood Group</label>
 					<select class="form-control mb-3" name="destination" id="destination" required>
 						<option value="">--SELECT--</option>
-						<option value="Sigiriya">Sigiriya</option>
-						<option value="Ella">Ella</option>
-						<option value="Ruassala">Ruassala</option>
-						<option value="Arugabey">Arugabey Beach</option>
-					</select
+						<option value="Sigiriya">A-</option>
+						<option value="Ella">A+</option>
+						<option value="Ruassala">B-</option>
+						<option value="Arugabey">B+</option>
+						<option value="Sigiriya">AB-</option>
+						<option value="Ella">AB+</option>
+						<option value="Sigiriya">O-</option>
+						<option value="Ella">O+</option>
+					</select>
 				</div>
 
 				<div class="form-group row">

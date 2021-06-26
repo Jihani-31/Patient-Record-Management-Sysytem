@@ -16,7 +16,7 @@ body {
 	color: #fff; cursor: pointer;
 }
 
-.nav-link 
+.nav-link header-background
 { 
 	margin-right: 1em !important;
 }
@@ -35,7 +35,7 @@ body {
 
 .header 
 { 
-	background-image: url('../img/header-background.jpg'); 
+	/* background-image: url('../img/home.jpg');  */
 	background-size: cover; 
 	background-position: center; 
 	position: relative;
@@ -166,4 +166,3 @@ body {
 		margin: 0;
 	}
 
-}
